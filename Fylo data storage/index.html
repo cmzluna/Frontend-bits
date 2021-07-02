@@ -19,27 +19,36 @@
   <div class="container">
   
     <div class="controls">
-
       <div class="controls__header">
         <img src="./images/logo.svg" />
       </div>
-
+  
       <div class="controls__buttons">
         <img class="btn-small" src="./images/icon-document.svg">
         <img class="btn-small" src="./images/icon-folder.svg">
         <img class="btn-small" src="./images/icon-upload.svg">
       </div>
-
     </div>
   
     <div class="status">
-      You’ve used 815 GB of your storage
-      185 GB Left
   
-      0 GB
+      <span>You’ve used 815 GB of your storage</span>
+      <progress max="100" value="80"></progress>
   
-      1000 GB
+      <div class="status__limits">
+        <span>0 GB</span>
+        <span>1000 GB</span>
+      </div>
+  
+      <div class="status__remaining">
+         <span>185</span> GB LEFT
+      </div>
+      
+
     </div>
+  
+  
+  </div>
   
   
   
