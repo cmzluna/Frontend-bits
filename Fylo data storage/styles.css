@@ -68,7 +68,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  justify-content: space-between;
+  padding: 1.5rem;
+  height: 8.5rem;
   max-width: 330px;
   position: relative;
   border: 1px solid white;
