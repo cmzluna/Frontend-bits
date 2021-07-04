@@ -19,6 +19,15 @@
   --color-light-red: hsl(356, 100%, 66%);
   --very-light-red: hsl(355, 100%, 74%);
   --very-dark-blue: hsl(208, 49%, 24%);
+  --very-dark-gray-blue: hsl(237, 17%, 21%);
+  --grayish-blue: hsl(240, 2%, 79%);
+  /*  (footer text)*/
+
+  --very-dark-grayish-blue: hsl(207, 13%, 34%);
+  /* (body copy)*/
+
+  --very-dark-black-blue: hsl(240, 10%, 16%);
+  /* (footer background)-*/
 }
 
 body {
@@ -34,6 +43,9 @@ body {
     hsl(353, 100%, 62%)
   );
   position: relative;
+  z-index: 1;
+  border-radius: 0 0 0 7em;
+  overflow: hidden;
 }
 
 .container {
@@ -111,4 +123,31 @@ body {
   left: -180px;
   width: 160%;
   z-index: -1;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  color: var(--very-dark-blue);
+  text-align: center;
+}
+
+.designed__illustration {
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(./images/illustration-editor-mobile.svg);
+}
+
+.designed__paragraph {
+  color: var(--very-dark-grayish-blue);
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  font-family: var(--font2);
+  margin-top: 1em;
+}
+
+.designed__about {
+  margin-bottom: 3em;
 }
