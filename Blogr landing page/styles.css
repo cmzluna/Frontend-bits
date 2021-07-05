@@ -28,6 +28,8 @@
 
   --very-dark-black-blue: hsl(240, 10%, 16%);
   /* (footer background)-*/
+
+  --very-dark-desaturated-blue: hsl(237, 23%, 32%);
 }
 
 body {
@@ -150,4 +152,52 @@ body {
 
 .designed__about {
   margin-bottom: 3em;
+}
+
+.infrastructure {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+/* placing background using before pseudoelement */
+.infrastructure::before {
+  content: "";
+  display: block;
+  padding: 80px;
+  width: 100%;
+  top: 30%;
+  bottom: 0;
+  position: absolute;
+  background-color: var(--very-dark-desaturated-blue);
+  z-index: -1;
+  border-radius: 0 6em 0 6em;
+}
+
+.infrastructure__phones {
+  width: 100%;
+}
+
+.infrastructure__title {
+  font-size: 2rem;
+}
+
+.infrastructure__paragraph {
+  color: var(--grayish-blue);
+  line-height: 1.5;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.infrastructure__container {
+  margin-top: 1rem;
+}
+
+.free__illustration {
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(./images/illustration-laptop-mobile.svg);
 }
