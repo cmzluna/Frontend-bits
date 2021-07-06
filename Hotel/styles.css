@@ -95,7 +95,7 @@ p {
 }
 
 #basics {
-  height: 100vh;
+  height: 100%;
 }
 
 .basics__img {
@@ -117,5 +117,21 @@ p {
   overflow: hidden;
   background-color: #333;
   overflow: hidden;
-  padding: 150px 30px;
+  padding: 100px 30px;
+}
+
+.box {
+  float: left;
+  width: 33.3%;
+  padding: 30px;
+  text-align: center;
+  height: 100%;
+}
+
+.bg-primary {
+  background-color: rgb(164, 150, 210);
+}
+
+.bg-light {
+  background-color: rgb(195, 217, 231);
 }
